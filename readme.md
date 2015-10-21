@@ -1,14 +1,7 @@
-# KAYAK Web App
+# Flight-Guru
 
-Check button is disabled untill user will enter flight number.
+It helps user to check available fligts of differnet airlines.
 
-I checked on link http://www.kayak.com/tracker by entering 
-flight name and flight number
-url is like this: http://www.kayak.com/tracker/EK-4/2015-09-29
-
-I gathered info from model and created date now it will take to requested flight.
-
- 
 ## Build 
 
 npm install  
@@ -16,6 +9,20 @@ npm install
 bower install
 
 grunt serve
+
+# How to use
+
+App will show all available airlines. On click any of them will take user to Detail page.
+
+On Detail page user can checnk the airline website for more information and can search the
+
+flight by entering flight number.
+
+
+
+
+
+ 
 
 
 
