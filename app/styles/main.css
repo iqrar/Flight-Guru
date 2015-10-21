@@ -1,0 +1,228 @@
+
+/* General styles */
+body {
+  padding: 0;
+  margin:0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  color: #333333;
+  font-weight:normal;
+}
+
+* {
+    box-sizing:border-box;
+}
+
+input {
+  font-size:18px !important;
+  line-height: 1.2;
+  font-weight:200 !important;
+}
+
+input:focus {
+   outline:0px !important;
+    -webkit-appearance:none;
+}
+
+input::-webkit-input-placeholder {
+    font-size: 18px;
+    letter-spacing: 1px !important;
+    line-height: 1.2;
+    font-weight:200;
+    text-transform: initial;
+    color:#cacaca !important;
+    padding:1px 0 0 6px;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+.header {
+    background-color: #221F20;
+ }
+
+.logo {
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+    height:45px;
+    margin: 5px 15px;
+}
+
+#list-view {
+    padding-top:15px;
+}
+
+ul {
+    border-top: 1px solid  #cacaca;
+    background-color: #fafafa;
+    margin-top:15px;
+}
+
+li {
+   padding:0 !important;
+   margin:0 !important;
+   border-bottom: 1px solid  #cacaca;
+   border-top: 1px solid #ffffff;
+}
+
+img.logo-url {
+    margin:14px 15px;
+    width:65px;
+}
+
+p.airline-name {
+    margin:29px 0 0 10px;
+
+}
+
+p.number-of-rows {
+   padding:10px 0 15px 110px;
+    
+}
+
+a.goto-details {
+    color: #333333;
+}
+
+a.goto-details {
+    color: #333333;
+}
+
+#details-view {
+    padding:0 15px 15px 15px;
+}
+
+a.details-link {
+    color:#f49000;
+}
+
+a.details-link:hover{
+    color:#f49000;
+}
+
+.site{
+   color:#f49000; 
+}
+
+.airline-detail{
+  padding: 28px 0;
+}
+
+.search-field {
+  text-transform: uppercase;
+  border-radius:15px;
+  width: 70%;
+  height: 30px;
+  padding: 0px 12px;
+  line-height: 1.42857143;
+  float: left;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: none;
+  -webkit-transition:none;
+  -webkit-appearance:none;
+}
+
+.status-label {
+  color:#f49000;
+}
+
+/* Spin 360 via keyframes*/
+img.detail-logo-url {
+   width:75px;
+   margin-top:20px;
+  -webkit-animation: 2s spin; 
+  -moz-animation: 2s spin; 
+   -o-animation: 2s spin;
+   animation: 2s spin;   
+  
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Override Classes*/
+
+.form-control{
+    width:93%;
+    margin:0 auto;
+    border-radius:15px;
+    height:30px;
+    line-height:1.4;
+    letter-spacing: normal !important;
+    -webkit-appearance:none;
+}
+
+.btn {
+    border-radius:15px;
+    width:100px;
+    font-size:18px;
+    height:30px;
+    padding:0;
+    font-weight:200;
+    line-height:0.6;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #f49000;
+    border-color: #ccc;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #f49000;
+    border-color: #ccc;
+}
+
+.btn-default:disabled {
+    color: #fff;
+    background-color: #f49000 !important;
+    border-color: #ccc;
+}
+
+.btn-default[disabled]:hover {
+    color: #fff;
+    background-color: #f49000;
+    border-color: #ccc;
+}
+
+.form-control:focus {
+    border-color: #eee; 
+    outline: none !important; 
+    border: 1px solid #ccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.btn[disabled], fieldset[disabled] .btn {
+    
+     opacity: 1 !important; 
+}
+/* Fit on desktop screen*/
+
+@media screen and (min-width:768px) {
+    #details-view {
+     width:600px !important;
+     margin:0 auto;
+   }
+}
+
+
+
+
+
+
+
+
+
+

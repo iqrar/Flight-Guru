@@ -1,0 +1,29 @@
+<section id = "list-view">
+ <!-- Airlines List -->
+ <div ng-show="$state.current.name === 'list'">
+     <!--search filter-->
+	  <input  type = "text" placeholder="Airline filter..." class = "form-control" ng-model = "search">
+
+	         <ul class= "list-unstyled">
+		        <li class = "media" ng-repeat = "airline in airlines | limitTo:6 |filter:search">
+				     <a class = "goto-details" ui-sref=".details" ng-click = "airelineDetails(airline)">
+						 <div class = "pull-left">
+							  <img class= "logo-url" src = "http://www.kayak.com{{airline.logoURL}}">
+						 </div>
+
+						  <div class = "media-body">
+							   <p class = "airline-name">{{airline.name}}</p>
+						  </div>
+					   </a>
+			       </li>
+	          </ul>
+     <!-- Number of rows -->
+	 <footer>
+	  	<p class = "number-of-rows"> Displaying - {{(airlines | limitTo:6 |filter:search).length}}/6 </p>
+	 </footer>
+  </div>
+<!-- Airline details -->
+	<div ng-show="$state.current.name === 'list.details'">
+	   <div ui-view autoscroll="false"></div>
+	</div>
+</section>

@@ -1,0 +1,32 @@
+<section id = "details-view">
+	 <a class= "details-link" ui-sref = "list"> &lt Back to list </a>
+	  <div class = "row">
+	   <div class = "col-xs-6">
+		     <div class = "airline-detail">
+			    <p>{{details.name}} ({{details.code}})<br/>
+
+				    <span ng-show = "details.phone === phone">
+				      {{details.phone}}<br/>
+				    </span>
+
+		            <span  ng-show = "details.site === siteExist" class = "site" >
+			            <a  class= "details-link" ng-href = "http://{{details.site}}">
+					      {{site}}
+					    </a>
+		            </span>
+		        </p>
+			 </div>
+	  </div><!--info -->
+		<div class = "col-xs-6 ">
+			 <img class = "pull-right detail-logo-url" ng-src = "http://www.kayak.com{{details.logoURL}}}"/>
+		</div>
+	  </div><!--row-->
+          <div>
+			   <p class = "status-label"> Check flight status </p>
+			   <form name = "myForm">
+				    <p><input   type = "number" class = "search-field"  placeholder = "Enter flight number..." ng-model = "flightNumber" required>
+				    <button ng-disabled="myForm.$invalid" class = "btn btn-default pull-right" ng-click = "checkStatus(flightNumber,details.code)">Check</button></p>
+			   </form>
+	     </div>
+	  </div>
+</section>
